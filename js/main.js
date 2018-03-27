@@ -25,7 +25,7 @@
         };
         
         $scope.username = "angular";
-
+        $scope.repoSortOrder ="-stargazers_count";
     };
     app.controller("MainController", ["$scope", "$http", MainController]);
 
