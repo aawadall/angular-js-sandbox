@@ -33,7 +33,7 @@
         };
 
         $scope.search = function (username) {
-            github.getUser(username).then(onUserComplete, onError);
+            github.getUser(username).then(onUserComplete, onError); // needs debug, crashes here 
             if (countdownInterval) {
                 $interval.cancel(countdownInterval);
                 $scope.countdown = null;
